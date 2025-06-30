@@ -43,7 +43,7 @@
             <select name="id_categoria" id="id_categoria" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
                 <option value="" disabled selected>Seleccionar Categoría</option>
                 @foreach ($categorias as $categoria)
-                    <option value="{{ $categoria->id }}">{{ $categoria->id }}</option>
+                    <option value="{{ $categoria->Nombre }}">{{ $categoria->Nombre }}</option>
                 @endforeach
             </select>
         </div>
@@ -53,7 +53,7 @@
             <select name="id_proveedors" id="id_proveedors" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
                 <option value="" disabled selected>Seleccionar Proveedor</option>
                 @foreach ($proveedores as $proveedor)
-                    <option value="{{ $proveedor->id }}">{{ $proveedor->id }}</option>
+                    <option value="{{ $proveedor->Nombre }}">{{ $proveedor->Nombre }}</option>
                 @endforeach
             </select>
         </div>
