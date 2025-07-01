@@ -37,15 +37,6 @@
             <input type="email" name="Correo" id="Correo" placeholder="Correo" required class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
         </div>
 
-        <div class="mb-4">
-            <label for="contacto" class="block text-gray-700 font-semibold">Contacto</label>
-            <input type="tel" name="Contacto" id="Contacto" placeholder="Contacto" required class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-        </div>
-
-        <div class="mb-4">
-            <label for="descripcion" class="block text-gray-700 font-semibold">Descripción</label>
-            <textarea name="Descripcion" id="Descripcion" cols="30" rows="5" placeholder="Descripción del proveedor" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
-        </div>
 
         <div class="flex justify-center">
             <input type="submit" value="Crear Proveedor" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
