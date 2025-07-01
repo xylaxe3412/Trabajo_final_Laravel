@@ -70,8 +70,7 @@
                     <th class="px-6 py-3 text-left">Dirección</th>
                     <th class="px-6 py-3 text-left">Teléfono</th>
                     <th class="px-6 py-3 text-left">Correo</th>
-                    <th class="px-6 py-3 text-left">Contacto</th>
-                    <th class="px-6 py-3 text-left">Descripción</th>
+
                     <th class="px-6 py-3 text-center" colspan="2">Acciones</th>
                 </tr>
             </thead>
@@ -83,8 +82,7 @@
                         <td class="px-6 py-4">{{ $proveedor->Direccion }}</td>
                         <td class="px-6 py-4">{{ $proveedor->Telefono }}</td>
                         <td class="px-6 py-4">{{ $proveedor->Correo }}</td>
-                        <td class="px-6 py-4">{{ $proveedor->Contacto }}</td>
-                        <td class="px-6 py-4">{{ $proveedor->Descripcion }}</td>
+
                         <td class="px-6 py-4 text-center">
                             <a href="{{ route('editar_proveedor_view', $proveedor->id) }}" class="text-blue-600 hover:text-blue-800">Editar</a>
                         </td>

@@ -42,17 +42,6 @@
             <input type="email" name="Correo" value="{{ $proveedor->Correo }}" placeholder="Correo electrónico" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
         </div>
 
-        <!-- Contacto del Proveedor -->
-        <div class="mb-4">
-            <label for="Contacto" class="block text-gray-700 font-semibold">Nombre del Contacto</label>
-            <input type="tel" name="Contacto" value="{{ $proveedor->Contacto }}" placeholder="Nombre del contacto" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-        </div>
-
-        <!-- Descripción del Proveedor -->
-        <div class="mb-4">
-            <label for="Descripcion" class="block text-gray-700 font-semibold">Descripción</label>
-            <textarea name="Descripcion" cols="30" rows="10" placeholder="Descripción del proveedor" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">{{ $proveedor->Descripcion }}</textarea>
-        </div>
 
         <!-- Botón de Enviar -->
         <div class="flex justify-center">
