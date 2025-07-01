@@ -22,8 +22,6 @@ class ProveedorController extends Controller
             'Direccion' => 'required|string|max:255',
             'Telefono' => 'required|string|max:15',
             'Correo' => 'required|email|max:255',
-            'Contacto' => 'required|string|max:255',
-            'Descripcion' => 'required|string|max:1000',
         ]);
 
         Proveedor::create($validated);
@@ -37,8 +35,6 @@ class ProveedorController extends Controller
             'Direccion' => 'required',
             'Telefono' => 'required',
             'Correo' => 'required|email',
-            'Contacto' => 'required',
-            'Descripcion' => 'required',
         ]);
     
         Proveedor::where('id', $id)->update($validate);
