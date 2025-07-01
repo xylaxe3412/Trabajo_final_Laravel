@@ -1,29 +1,32 @@
 <?php
+
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProductosTable extends Migration
+class GestionCompras extends Migration
 {
     public function up(): void
     {
-        Schema::create('productos', function (Blueprint $table) {
+        Schema::create('compras', function (Blueprint $table) {
     $table->id();
-    $table->string('Nombre');
-    $table->string('descripcion', 100)->nullable();
-    $table->decimal('precio_unitario', 10, 2);
-    $table->integer('stock');
     $table->unsignedBigInteger('id_categoria');
+    $table->unsignedBigInteger('id_proveedor');
+    $table->integer('cantidad');
+    $table->decimal('total', 10, 2);
     $table->timestamps();
+
             
     $table->foreign('id_categoria')->references('id')->on('categorias')->onDelete('cascade');
+    $table->foreign('id_proveedor')->references('id')->on('proveedors')->onDelete('cascade');
 
 });
 
-    }
+
+   }
 
     public function down(): void
     {
-        Schema::dropIfExists('productos');
+        Schema::dropIfExists('compras');
     }
 }

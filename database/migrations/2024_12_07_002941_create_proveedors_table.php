@@ -17,8 +17,6 @@ return new class extends Migration
             $table->string('Direccion', 50);
             $table->string('Telefono', 15)->unique();
             $table->string('Correo', 50)->unique();
-            $table->string('Contacto', 30);
-            $table->string('Descripcion', 100)->nullable();
             $table->timestamps();
         });
     }
