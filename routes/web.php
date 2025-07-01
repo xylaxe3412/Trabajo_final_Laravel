@@ -6,7 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\ProveedorController;
-
+use App\Http\Controllers\CompraController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,6 +32,9 @@ Route::post('/categoria/add', [CategoriaController::class, 'createCategory'])->n
 Route::get('/categoria/edit/{id}', [CategoriaController::class, 'updateCategoryView'])->name('editar_categoria');
 Route::post('/categoria/edit/{id}', [CategoriaController::class, 'updateCategory'])->name('editar_categoria');
 Route::get('/categoria/delte{id}', [CategoriaController::class, 'deleteCategory'])->name('eliminar_categoria');
+
+Route::get('/compras', [CompraController::class, 'index'])->name('compras');
+Route::post('/compras/crear', [CompraController::class, 'createCompra'])->name('compras.create');
 
 
 

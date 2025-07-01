@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gestionar Proveedores</title>
+    <title>Gestionar Clientes</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -18,8 +18,8 @@
     <form action="{{ route('add_proveedor') }}" method="POST" class="bg-white p-8 rounded-lg shadow-md max-w-xl mx-auto mt-6">
         @csrf
         <div class="mb-4">
-            <label for="nombre" class="block text-gray-700 font-semibold">Nombre del Proveedor</label>
-            <input type="text" name="Nombre" id="Nombre" placeholder="Nombre del Proveedor" required class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <label for="nombre" class="block text-gray-700 font-semibold">Nombre del Cliente</label>
+            <input type="text" name="Nombre" id="Nombre" placeholder="Nombre del cliente" required class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
         </div>
 
         <div class="mb-4">
@@ -39,7 +39,7 @@
 
 
         <div class="flex justify-center">
-            <input type="submit" value="Crear Proveedor" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <input type="submit" value="Crear cliente" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
         </div>
     </form>
 
@@ -51,7 +51,7 @@
     @endif
 
     <!-- Lista de Proveedores -->
-    <h2 class="text-center text-2xl font-semibold mt-8">Lista de Proveedores</h2>
+    <h2 class="text-center text-2xl font-semibold mt-8">Lista de Clientes</h2>
     <div class="overflow-x-auto mt-4 mx-6">
         <table class="min-w-full bg-white rounded-lg shadow-md">
             <thead>

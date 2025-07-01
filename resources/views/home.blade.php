@@ -12,11 +12,14 @@
     <!-- Enlaces Crear Proveedor y Crear Categoría -->
     <article class="flex justify-around mt-6 mb-6">
         <a href="{{ route('proveedor') }}" class="text-center bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200">
-            <h2 class="text-xl">Crear Proveedor</h2>
+            <h2 class="text-xl">Crear Cliente</h2>
         </a>
 
         <a href="{{ route('categoria') }}" class="text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200">
             <h2 class="text-xl">Crear Categoría</h2>
+        </a>
+        <a href="{{ route('compras') }}" class="text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200">
+            <h2 class="text-xl">Hacer compra</h2>
         </a>
     </article>
     

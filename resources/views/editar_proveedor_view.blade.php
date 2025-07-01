@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Editar Proveedor</title>
+    <title>Editar Cliente</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -20,7 +20,7 @@
 
         <!-- Nombre del Proveedor -->
         <div class="mb-4">
-            <label for="Nombre" class="block text-gray-700 font-semibold">Nombre del Proveedor</label>
+            <label for="Nombre" class="block text-gray-700 font-semibold">Nombre del Cliente</label>
             <input type="text" name="Nombre" value="{{ $proveedor->Nombre }}" placeholder="Nombre del proveedor" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
         </div>
 
@@ -45,7 +45,7 @@
 
         <!-- Botón de Enviar -->
         <div class="flex justify-center">
-            <input type="submit" value="Actualizar Proveedor" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <input type="submit" value="Actualizar cliente" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
         </div>
     </form>
 
