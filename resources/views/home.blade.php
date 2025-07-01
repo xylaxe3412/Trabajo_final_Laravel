@@ -43,20 +43,11 @@
             <select name="id_categoria" id="id_categoria" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
                 <option value="" disabled selected>Seleccionar Categoría</option>
                 @foreach ($categorias as $categoria)
-                    <option value="{{ $categoria->Nombre }}">{{ $categoria->Nombre }}</option>
+                    <option value="{{ $categoria->id }}">{{ $categoria->id }}</option>
                 @endforeach
             </select>
         </div>
 
-        <div class="mb-4">
-            <label for="id_proveedors" class="block text-gray-700 font-semibold">Seleccionar Proveedor</label>
-            <select name="id_proveedors" id="id_proveedors" class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                <option value="" disabled selected>Seleccionar Proveedor</option>
-                @foreach ($proveedores as $proveedor)
-                    <option value="{{ $proveedor->Nombre }}">{{ $proveedor->Nombre }}</option>
-                @endforeach
-            </select>
-        </div>
 
         <div class="flex justify-center">
             <input type="submit" value="Añadir Producto" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">

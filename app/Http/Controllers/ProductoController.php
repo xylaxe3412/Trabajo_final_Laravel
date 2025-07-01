@@ -11,17 +11,15 @@ use App\services\ProveedorService;
 class ProductoController extends Controller
 {
 
-    public function index(ProductService $product, CategoryService $categoria, ProveedorService $proveedor)
+    public function index(ProductService $product, CategoryService $categoria)
     {
         
         $productos = $product->getProductos();
         $categorias = $categoria->getCategoria();
-        $proveedores = $proveedor->getProveedor();
 
         return view('home', [
             'productos' => $productos,     // Uso correcto de `=>`
             'categorias' => $categorias,   // Uso correcto de `=>`
-            'proveedores' => $proveedores // Uso correcto de `=>`
         ]);
 
     }
@@ -32,7 +30,7 @@ class ProductoController extends Controller
             'precio_unitario' => 'required',
             'stock' => 'required',
             'id_categoria' => 'required',
-            'id_proveedors' =>'required'
+
         ]);
         Producto::create($validate);
         return redirect()->route('home')->with('status', 'Categoria craeda con exito');
